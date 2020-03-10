@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <title>Diabetes Prediction</title>
+  <style>
+    .container{
+      text-align: center;
+      border: black;
+      background-color: aquamarine;
+      box-sizing: border-box;
+      top:56px;
+
+    }
+    
+    body{
+      background-color:wheat;
+    }
+    .form-text text-muted{
+
+  color: blue;
+    }
+
+  </style>
+  </head>
+
+  <body>
+    <h1><div style="text-align:center"><font color="blue">Prediction for Diabetes</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center">Enter the values to predict the outcome</div></h2>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+            <div class="form-group">
+            <br><br><label for="Pregnancies"><p class="font-weight-bold">Pregnancies</p></label>
+              <input type="text" name="Pregnancies">
+              <small id="PRHelp" class="form-text text-muted">Enter rate of sugar levels in 10</small>
+              </div>
+
+               <div class="form-group">
+                <label for="Glucose"><p class="font-weight-bold">Glucose</p></label>
+                <input type="text" name="Glucose">
+                <small id="GLuHelp" class="form-text text-muted">Enter the glucose levels</small>
+                </div>
+
+                 <div class="form-group">
+                  <label for="BloodPressure"><p class="font-weight-bold">BloodPressure</p></label>
+                  <input type="text" name="BloodPressure">
+                  <small id="BPHelp" class="form-text text-muted">Enter the bloodpressure</small>
+                  </div>
+
+                    <div class="form-group">
+                    <label for="SkinThickness"><p class="font-weight-bold">SkinThickness</p></label>
+                    <input type="text" name="SkinThickness">
+                    <small id="skinHelp" class="form-text text-muted">Enter the value of skinthickness</small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="Insulin"><p class="font-weight-bold">Insulin</p></label>
+                      <input type="text" name="Insulin">
+                      <small id="InsulinHelp" class="form-text text-muted">Enter the value of Insulin</small>
+                      </div>
+
+                       <div class="form-group">
+                        <label for="BMI"><p class="font-weight-bold">BMI</p></label>
+                        <input type="text" name="BMI">
+                        <small id="BMIHelp" class="form-text text-muted">Enter the body mass index</small>
+                        </div>
+                        
+                         <div class="form-group">
+                          <label for="DiabetesPedigreeFunction"><p class="font-weight-bold">DiabetesPedigreeFunction</p></label>
+                          <input type="text" name="DiabetesPedigreeFunction">
+                          <small id="dbfHelp" class="form-text text-muted">Enter the DiabetesPedigreeFunction</small>
+                          </div>
+                         
+                         <div class="form-group">
+                            <label for="Age"><p class="font-weight-bold">Age</p></label>
+                            <input type="text" name="Age">
+                            <small id="ageHelp" class="form-text text-muted">Enter the age</small>
+                            </div>
+    
+
+                        <input class='btn btn-primary' type='submit' value='Submit'>
+                        <h5> Thank you!!</h5>
+                       
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
